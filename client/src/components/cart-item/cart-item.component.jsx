@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {memo} from 'react';
 import './cart-item.styles.scss';
 
 const cartItem = ({item: {imageUrl, price, name, quantity}}) =>(
@@ -11,4 +11,4 @@ const cartItem = ({item: {imageUrl, price, name, quantity}}) =>(
     </div>
 )
 
-export default cartItem;
+export default memo(cartItem);
